@@ -169,10 +169,6 @@
       "url": ".nojekyll"
     },
     {
-      "hash": "sha256-47DEQpj8HBSa+\/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
-      "url": "100.html"
-    },
-    {
       "hash": "sha256-nVqHvcRCh29CNRcWIkk1YpwG2fociB6udvjraL0gPqY=",
       "url": "404.html"
     },
@@ -249,5 +245,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "gkXZJYaD"
+  "version": "fB\/u4jV4"
 };
