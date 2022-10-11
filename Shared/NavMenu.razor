@@ -1,4 +1,7 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@using Microsoft.JSInterop
+@inject IJSRuntime JS
+
+<!-- <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">Block</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
@@ -25,15 +28,73 @@
             </NavLink>
         </div>
     </nav>
+</div> -->
+
+<div class="site-body-left-column-site-name">Obsidian Help</div>
+<div class="@LeftColumnCss" style="">
+    <span class="option mod-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+             height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+             stroke-linejoin="round" class="lucide-moon">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </span>
+    <div class="@CheckboxContainerCss"
+         @onclick="ToggleTheme"></div><span class="option mod-light">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-sun">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m5 5 1.5 1.5"></path>
+            <path d="M17.5 17.5 19 19"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m5 19 1.5-1.5"></path>
+            <path d="M17.5 6.5 19 5"></path>
+        </svg>
+    </span>
+</div>
+<div class="search-view-outer">
+    <div class="search-view-container">
+        <span class="published-search-icon">
+            <svg viewBox="0 0 100 100"
+                 class="magnifying-glass" width="16" height="16">
+                <path fill="currentColor" stroke="currentColor"
+                      d="M42,6C23.2,6,8,21.2,8,40s15.2,34,34,34c7.4,0,14.3-2.4,19.9-6.4l26.3,26.3l5.6-5.6l-26-26.1c5.1-6,8.2-13.7,8.2-22.1 C76,21.2,60.8,6,42,6z M42,10c16.6,0,30,13.4,30,30S58.6,70,42,70S12,56.6,12,40S25.4,10,42,10z">
+                </path>
+            </svg>
+        </span><input class="search-bar" type="text" placeholder="Search page or heading...">
+    </div>
+</div>
+<div class="nav-view-outer">
+    <div class="nav-view">
+        <div class="tree-item">
+            <div class="tree-item-self mod-root is-clickable" data-path="">
+                <div class="tree-item-inner"></div>
+            </div>
+            <div class="tree-item-children">
+
+
+                <!-- menu -->
+
+
+
+            </div>
+        </div>
+    </div>
 </div>
 
 @code {
-    private bool collapseNavMenu = true;
+    private bool isLight = true;
+    private string? BodyCss => isLight ? "theme-light" : "theme-dark";
+    private string? CheckboxContainerCss => isLight ? "checkbox-container" : "checkbox-container is-enabled";
+    private string? LeftColumnCss => isLight ? "site-body-left-column-site-theme-toggle" :
+    "site-body-left-column-site-theme-toggle is-dark";
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
+    private async void ToggleTheme()
     {
-        collapseNavMenu = !collapseNavMenu;
+        await JS.InvokeVoidAsync("toggleTheme", new[] { BodyCss });
+        isLight = !isLight;
     }
 }

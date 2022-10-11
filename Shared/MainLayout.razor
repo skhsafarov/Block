@@ -1,8 +1,7 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
+<!-- <div class="page">
     <div class="sidebar">
-        <NavMenu />
     </div>
 
     <main>
@@ -11,7 +10,94 @@
         </div>
 
         <article class="content px-4">
-            @Body
         </article>
     </main>
+</div> -->
+
+<div class="@NavMenuCssClass">
+    <div class="loader-cube" style="display: none;">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
+    <div class="site-body">
+        <div class="site-body-left-column">
+            <img class="site-body-left-column-site-logo" style="display: none;">
+            <NavMenu />
+        </div>
+        <div class="site-body-center-column">
+            <div class="site-header">
+                <div class="clickable-icon" @onclick="ToggleNavMenu">
+                    <svg viewBox="0 0 100 100" class="three-horizontal-bars" width="20"
+                         height="20">
+                        <path fill="currentColor" stroke="currentColor"
+                              d="M6,18c-0.7,0-1.4,0.4-1.8,1c-0.4,0.6-0.4,1.4,0,2c0.4,0.6,1,1,1.8,1h88c0.7,0,1.4-0.4,1.8-1s0.4-1.4,0-2 c-0.4-0.6-1-1-1.8-1H6z M6,48c-0.7,0-1.4,0.4-1.8,1c-0.4,0.6-0.4,1.4,0,2c0.4,0.6,1,1,1.8,1h88c0.7,0,1.4-0.4,1.8-1 c0.4-0.6,0.4-1.4,0-2s-1-1-1.8-1H6z M6,78c-0.7,0-1.4,0.4-1.8,1c-0.4,0.6-0.4,1.4,0,2c0.4,0.6,1,1,1.8,1h88c0.7,0,1.4-0.4,1.8-1 s0.4-1.4,0-2s-1-1-1.8-1H6z">
+                        </path>
+                    </svg>
+                </div><img class="site-header-logo" style="display: none;">
+                <div class="site-header-text">Obsidian Help</div>
+            </div>
+            <div class="render-container">
+                <div class="render-container-inner">
+                    <div class="publish-renderer">
+                        <div class="markdown-preview-view markdown-rendered node-insert-event">
+                            <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: 0px;">
+                                <div class="markdown-preview-pusher"
+                                     style="width: 1px; height: 0.1px; margin-bottom: 0px;">
+                                </div>
+
+
+                                <!-- content -->
+                                @Body
+
+
+                            </div>
+                        </div>
+                        <div class="extra-title">
+                            <span class="extra-title-text">Index</span><span aria-label="Close page">
+                                <svg viewBox="0 0 100 100" class="cross" width="14" height="14">
+                                    <path fill="currentColor" stroke="currentColor"
+                                          d="M15.4,12.6l-2.9,2.9L47.1,50L12.6,84.6l2.9,2.9L50,52.9l34.6,34.6l2.9-2.9L52.9,50l34.6-34.6l-2.9-2.9L50,47.1L15.4,12.6z ">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="not-found-container" style="display: none;">
+                    <div class="not-found-image"></div>
+                    <div class="not-found-title">File not found</div>
+                    <div class="not-found-description">
+                        Oops, this file does not exist. Try look for something else.
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer">
+                <a href="https://publish.obsidian.md" target="_blank">
+                    Powered by Obsidian
+                    Publish
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav-backdrop" @onclick="ToggleNavMenu"></div>
 </div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "published-container print is-readable-line-width has-navigation has-graph has-outline" : "published-container print is-readable-line-width has-navigation has-graph has-outline is-left-column-open";
+
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+    
+}
