@@ -15,5 +15,4 @@ git add *
 git commit -m "published gh-pages branch"
 git push
 
-
-cd /bin/Release/net6.0/publish/sax
+powershell -NoExit D:/Block/publish.ps1
