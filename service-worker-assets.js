@@ -157,6 +157,18 @@
       "url": "Block.styles.css"
     },
     {
+      "hash": "sha256-FfJSKOeBUI0Gu0hJ7zXJ+qSdP2C0dRh6VEPqNs9SdpY=",
+      "url": ".gitattributes"
+    },
+    {
+      "hash": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=",
+      "url": ".nojekyll"
+    },
+    {
+      "hash": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=",
+      "url": "404.html"
+    },
+    {
       "hash": "sha256-lDAEEaul32OkTANWkZgjgs4sFCsMdLsR5NJxrjVcXdo=",
       "url": "css\/app.css"
     },
@@ -217,7 +229,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-JZC+K2hzOH5WXfr8+eT4jDXNa8gELMcsBL7DX0UJJvc=",
+      "hash": "sha256-OgP5\/9110AYftfmgul6m1IAkkCnIcVCNTnhh1N6yWHw=",
       "url": "index.html"
     },
     {
@@ -229,5 +241,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "j+babkKx"
+  "version": "3hqvlicW"
 };
