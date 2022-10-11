@@ -161,6 +161,10 @@
       "url": ".gitattributes"
     },
     {
+      "hash": "sha256-5KOgSGYgRieGpuEo8ksbvcRS8rkEvzKqCzxsQtks\/Nw=",
+      "url": ".gitignore"
+    },
+    {
       "hash": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=",
       "url": ".nojekyll"
     },
@@ -241,5 +245,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "lrqoM6Lp"
+  "version": "fB\/u4jV4"
 };
