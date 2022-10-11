@@ -14,4 +14,4 @@ git add *
 git commit -m "published gh-pages branch"
 git push
 
-powershell.exe -NoExit "D:/Block/publish.ps1"
+PowerShell -NoExit "D:/Block/publish.ps1"
