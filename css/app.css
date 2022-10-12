@@ -247,7 +247,7 @@
     box-sizing: border-box;
   }
   html,
-  body {
+  body, #app {
     margin: 0;
     padding: 0;
     height: 100%;
