@@ -87,14 +87,15 @@
 
 @code {
     private bool isLight = true;
-    private string? BodyCss => isLight ? "theme-light" : "theme-dark";
+    public string? BodyCss => isLight ? "theme-light" : "theme-dark";
     private string? CheckboxContainerCss => isLight ? "checkbox-container" : "checkbox-container is-enabled";
     private string? LeftColumnCss => isLight ? "site-body-left-column-site-theme-toggle" :
     "site-body-left-column-site-theme-toggle is-dark";
 
+
     private async void ToggleTheme()
     {
-        await JS.InvokeVoidAsync("toggleTheme", new[] { BodyCss });
         isLight = !isLight;
+        await JS.InvokeVoidAsync("toggleTheme", new[] { BodyCss });
     }
 }

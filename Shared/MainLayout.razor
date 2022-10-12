@@ -1,4 +1,6 @@
 ﻿@inherits LayoutComponentBase
+@using Microsoft.JSInterop
+@inject IJSRuntime JS
 
 <!-- <div class="page">
     <div class="sidebar">
@@ -94,10 +96,9 @@
 
     private string? NavMenuCssClass => collapseNavMenu ? "published-container print is-readable-line-width has-navigation has-graph has-outline" : "published-container print is-readable-line-width has-navigation has-graph has-outline is-left-column-open";
 
-
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
     }
-    
+
 }
