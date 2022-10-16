@@ -1,1 +1,0 @@
-PowerShell -NoExit -Command D:/Block/script.ps1
