@@ -165,7 +165,7 @@
       "url": ".nojekyll"
     },
     {
-      "hash": "sha256-JSgWQCqFbwH+I1DgJlLQ9iDBXsdLODj0HSFT64bD448=",
+      "hash": "sha256-HvQ\/wCT2xnJLyJ\/9kkBk7JyUAQX3wPY9dONauiUccEE=",
       "url": "404.html"
     },
     {
@@ -185,7 +185,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-EjEyj0EM1a7eIVcT+pteveBFZx0X7N9RK9f\/6r16rHQ=",
+      "hash": "sha256-\/roSTLUbELyZM04QFk\/Ti7Po+xMiYb5rAQLwSGIWFD0=",
       "url": "index.html"
     },
     {
@@ -197,5 +197,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "+J+Tl0Ld"
+  "version": "miRkKdEP"
 };
