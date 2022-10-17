@@ -1,0 +1,18 @@
+﻿<div class="tree-item">
+    <NavLink href="@Name" class="tree-item-self is-clickable" @onclick="ToggleMenuItem">
+        <div class="tree-item-inner">@Name</div>
+    </NavLink>
+    <div class="tree-item-children">
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string? Name { get; set; }
+
+    private bool collapseMenuItem = true;
+
+    private void ToggleMenuItem()
+    {
+    }
+}

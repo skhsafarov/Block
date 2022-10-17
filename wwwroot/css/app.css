@@ -3191,7 +3191,7 @@
     line-height: 20px;
     margin: 5px 0;
   }
-  .nav-view-outer .tree-item-self.mod-active {
+  .nav-view-outer .tree-item-self.active {
     background-color: var(--background-secondary-alt);
     font-weight: 600;
     color: var(--text-normal);
@@ -3211,7 +3211,7 @@
   .outline-view-outer .tree-item {
     margin: 2px 0;
   }
-  .outline-view-outer .tree-item-self.mod-active {
+  .outline-view-outer .tree-item-self.active {
     background-color: var(--background-primary-alt);
     font-weight: 600;
     color: var(--text-normal);
