@@ -91,12 +91,12 @@
 </div>
 
 @code {
-    private bool collapseNavMenu = true;
+    private static bool collapseNavMenu = true;
 
     private string? NavMenuCssClass => collapseNavMenu ? "published-container print is-readable-line-width has-navigation has-graph has-outline" : "published-container print is-readable-line-width has-navigation has-graph has-outline is-left-column-open";
 
 
-    private void ToggleNavMenu()
+    public static void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
     }
