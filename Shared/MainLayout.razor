@@ -89,25 +89,15 @@
     </div>
     <div class="nav-backdrop" @onclick="ToggleNavMenu"></div>
 </div>
-<MathJaxSettings Tex="texSettings" />
-<Router>...</Router>
 
 @code {
     private bool collapseNavMenu = true;
 
     private string? NavMenuCssClass => collapseNavMenu ? "published-container print is-readable-line-width has-navigation has-graph has-outline" : "published-container print is-readable-line-width has-navigation has-graph has-outline is-left-column-open";
 
-    TexInputSettings texSettings = new TexInputSettings();
 
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
-    }
-
-
-    protected override Task OnInitializedAsync()
-    {
-        texSettings.InlineMath.Add(new string[] { "$", "$" });
-        return base.OnInitializedAsync();
     }
 }
