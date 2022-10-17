@@ -25,19 +25,19 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-luCbtDYM6Qrg\/yOMmCvdp6PZ32dICNU0zRcOB7GMopQ=",
+      "hash": "sha256-0jy3hSBgz1QLI89kjiOZ8PlDirWlr5ScWekEsbc+OR0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-UynSGY+BB+pw21W\/KiA3xQai6BFDuBYODr67deW8nmI=",
+      "hash": "sha256-h8ZxF2z6i1miEZNnt7+ymQ4656tonOxC1baiGGTLKk8=",
       "url": "_framework\/Block.dll"
     },
     {
-      "hash": "sha256-EO3bRpfJ7tcrcDt4uRp3Lb5tIo8dkcIWv3kUBUuf\/6A=",
+      "hash": "sha256-\/RO8ZoaeYS8ods89INx7fDLlPwOLsurPiZdKN9R68js=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
-      "hash": "sha256-R516l0htcljqV5XCaLQkNC1Rk0h+SzudvI111ER6NRM=",
+      "hash": "sha256-3poIVMWCfVe6wCEbZLU0PCR7HN9OqcH3qnn9xI4+vuw=",
       "url": "_framework\/Microsoft.AspNetCore.Components.Web.dll"
     },
     {
@@ -117,7 +117,7 @@
       "url": "_framework\/System.Net.Primitives.dll"
     },
     {
-      "hash": "sha256-Lvybog79qYLMqQjMrmPzU4gwuTcWv7F4Bm+OlTcOQ44=",
+      "hash": "sha256-+ER5LswSg+bNprvFl5XAEA7x7mq\/Q1kqDzxymLRpAS4=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -125,7 +125,7 @@
       "url": "_framework\/System.Private.Runtime.InteropServices.JavaScript.dll"
     },
     {
-      "hash": "sha256-9QtMur1KLZfDFtqcSoSN+Rr1wPz1qoBKCsNosSPd5xU=",
+      "hash": "sha256-3NZYftZNvyKmhoUptFD8y41j5JDT0XBS4FhTjOMdfqk=",
       "url": "_framework\/System.Private.Uri.dll"
     },
     {
@@ -149,8 +149,12 @@
       "url": "_framework\/dotnet.6.0.9.5036slbuj4.js"
     },
     {
-      "hash": "sha256-1W1ipViCrWcaXEbg9zYwOFAPpYqD9ohwSkB++SMQV04=",
+      "hash": "sha256-Q4ZsqrUCG77n48Zwh042v\/R5Q+0Zqg8Q0lOEgZldMe8=",
       "url": "_framework\/dotnet.wasm"
+    },
+    {
+      "hash": "sha256-mrH4GZTLt3ZEJeIMtxcCMBN2\/WVHzEWtpEBtdxoewmw=",
+      "url": "Block.styles.css"
     },
     {
       "hash": "sha256-FfJSKOeBUI0Gu0hJ7zXJ+qSdP2C0dRh6VEPqNs9SdpY=",
@@ -165,11 +169,11 @@
       "url": ".nojekyll"
     },
     {
-      "hash": "sha256-HvQ\/wCT2xnJLyJ\/9kkBk7JyUAQX3wPY9dONauiUccEE=",
+      "hash": "sha256-nv\/0HIjZjrEURUhls1RNo1xz+WzBEHeHKpBoW1P04Hk=",
       "url": "404.html"
     },
     {
-      "hash": "sha256-t6QXXg9AZXjkInT8uOVJ0bKq5C9h+JE7Wv7qxXnT88U=",
+      "hash": "sha256-xKNF4vDTZNMA0h6fwaq8x3eE9qosBmr0zGPiJtKK0hs=",
       "url": "css\/app.css"
     },
     {
@@ -185,11 +189,11 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-\/roSTLUbELyZM04QFk\/Ti7Po+xMiYb5rAQLwSGIWFD0=",
+      "hash": "sha256-XU3PVCEFtfoKvULh9JYuzthVp\/f5+ho\/XDnj+Cs+0HE=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-mBitzGiUR2Sgf+9Oqi1724msW3xELgzx9\/Eu+IuLGsM=",
+      "hash": "sha256-hD1qajOz5qqvoFlWJ4jZ0bgotei9t\/afnXUXVrhlAoI=",
       "url": "manifest.json"
     },
     {
@@ -197,5 +201,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "miRkKdEP"
+  "version": "TiYL5fml"
 };
