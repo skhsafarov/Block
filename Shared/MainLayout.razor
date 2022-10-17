@@ -98,12 +98,13 @@
 
     private string? NavMenuCssClass => collapseNavMenu ? "published-container print is-readable-line-width has-navigation has-graph has-outline" : "published-container print is-readable-line-width has-navigation has-graph has-outline is-left-column-open";
 
+    TexInputSettings texSettings = new TexInputSettings();
+
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
     }
 
-    TexInputSettings texSettings = new TexInputSettings();
 
     protected override Task OnInitializedAsync()
     {
