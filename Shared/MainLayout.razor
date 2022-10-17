@@ -91,6 +91,8 @@
     </div>
     <div class="nav-backdrop" @onclick="ToggleNavMenu"></div>
 </div>
+<MathJaxSettings Tex="texSettings" />
+<Router>...</Router>
 
 @code {
     private bool collapseNavMenu = true;
@@ -102,4 +104,11 @@
         collapseNavMenu = !collapseNavMenu;
     }
 
+    TexInputSettings texSettings = new TexInputSettings();
+
+    protected override Task OnInitializedAsync()
+    {
+        texSettings.InlineMath.Add(new string[] { "$", "$" });
+        return base.OnInitializedAsync();
+    }
 }
