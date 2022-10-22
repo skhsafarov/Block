@@ -17,7 +17,7 @@
       "url": "404.html"
     },
     {
-      "hash": "sha256-x29oSFvZ5Mnt+UitHauOYZQT9NhT8Y5HI42mQWNwRE4=",
+      "hash": "sha256-2HDdfkzAS57gRK2MNKq+zQzU5PyyO0+WvP0APjRu12Q=",
       "url": "css\/app.css"
     },
     {
@@ -269,5 +269,5 @@
       "url": "_content\/MathJaxBlazor\/mathJaxBlazor.js.map"
     }
   ],
-  "version": "ykzlOIh6"
+  "version": "GyMwBHlZ"
 };
