@@ -3045,7 +3045,7 @@
     justify-content: center;
   }
   .published-container.is-readable-line-width .site-body-center-column {
-    flex: 0 1 740px;
+    flex: 0 1 auto;
   }
   .site-body {
     position: relative;
