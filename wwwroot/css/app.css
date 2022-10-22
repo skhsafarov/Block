@@ -3633,11 +3633,11 @@ body {
       Readable line width
    */
 .published-container.is-readable-line-width .site-body {
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .published-container.is-readable-line-width .site-body-center-column {
-    flex: 0 1 auto;
+    flex: 0 1 100%;
 }
 
 .site-body {
