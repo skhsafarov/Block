@@ -1,4 +1,5 @@
 ﻿@inject IJSRuntime JS
+@inject ILocalStorageService LS
 
 <!-- <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
@@ -94,9 +95,16 @@
     "site-body-left-column-site-theme-toggle is-dark";
 
 
+    protected override Task OnInitializedAsync()
+    {
+        isLight = LS.GetItemAsync<bool>("isLight").Result;
+        return base.OnInitializedAsync();
+    }
+
     private async void ToggleTheme()
     {
         isLight = !isLight;
+        await LS.SetItemAsync<bool>("isLight", !isLight);
         await JS.InvokeVoidAsync("toggleTheme", new[] { BodyCss });
     }
 }
