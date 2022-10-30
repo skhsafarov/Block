@@ -1,6 +1,6 @@
 ﻿<div class="tree-item">
-    <NavLink href="@Name" class="tree-item-self is-clickable" @onclick="ToggleMenuItem">
-        <div class="tree-item-inner">@Name</div>
+    <NavLink href="@Page" class="tree-item-self is-clickable" @onclick="ToggleMenuItem">
+        <div class="tree-item-inner">@Page</div>
     </NavLink>
     <div class="tree-item-children">
     </div>
@@ -8,7 +8,7 @@
 
 @code {
     [Parameter]
-    public string? Name { get; set; }
+    public string? Page { get; set; }
 
     // private bool collapseMenuItem = true;
 

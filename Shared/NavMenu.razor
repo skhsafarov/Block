@@ -1,6 +1,7 @@
 ﻿@inject IJSRuntime JS
 @inject ILocalStorageService LS
 
+
 <!-- <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">Block</a>
@@ -78,9 +79,9 @@
 
                 <!-- menu -->
 
-                <MenuItem Name="index" />
-                <MenuItem Name="counter" />
-                <MenuItem Name="fetchdata" />
+                <MenuItem Page="index" />
+                <MenuItem Page="counter" />
+                <MenuItem Page="fetchdata" />
 
             </div>
         </div>
@@ -95,16 +96,27 @@
     "site-body-left-column-site-theme-toggle is-dark";
 
 
-    protected override Task OnInitializedAsync()
+
+    protected async override Task OnInitializedAsync()
     {
-        isLight = LS.GetItemAsync<bool>("isLight").Result;
-        return base.OnInitializedAsync();
+        if (await LS.ContainKeyAsync("isLight"))
+        {
+            isLight = await LS.GetItemAsync<bool>("isLight");
+            await JS.InvokeVoidAsync("toggleTheme", new[] { BodyCss });
+        }
+        else
+        {
+            await LS.SetItemAsync<bool>("isLight", isLight);
+        }
+        await base.OnInitializedAsync();
     }
+
 
     private async void ToggleTheme()
     {
         isLight = !isLight;
-        await LS.SetItemAsync<bool>("isLight", !isLight);
+        await LS.SetItemAsync<bool>("isLight", isLight);
         await JS.InvokeVoidAsync("toggleTheme", new[] { BodyCss });
+        await OnInitializedAsync();
     }
 }

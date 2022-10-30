@@ -17,5 +17,6 @@
     protected async override Task OnInitializedAsync()
     {
         await Task.Run(() => { texSettings.InlineMath.Add(new string[] { "$", "$" }); });
+        await base.OnInitializedAsync();
     }
 }
