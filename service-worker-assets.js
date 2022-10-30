@@ -121,7 +121,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-HizqrsdKTKFyS2uaKGcOXKpbs6x\/eQYFHFcszFJnOnU=",
+      "hash": "sha256-JkBzJBDghHVfK0cxp8Rgq5H4OhfbtXYpSM5gKV3qDVA=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/Blazored.LocalStorage.dll"
     },
     {
-      "hash": "sha256-6PpiP1S9MKRB31ip+3S5CLHmGwk4Hi\/Xi9BmVGlio54=",
+      "hash": "sha256-2g4hNjmxmd85ALeVxPRCJH1EjImO9pe7C\/WDwRZNLrg=",
       "url": "_framework\/Block.dll"
     },
     {
@@ -281,5 +281,5 @@
       "url": "_content\/MathJaxBlazor\/mathJaxBlazor.js.map"
     }
   ],
-  "version": "q5phWYkl"
+  "version": "Kdy\/k+2D"
 };
