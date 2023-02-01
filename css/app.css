@@ -2868,6 +2868,7 @@ input.prompt-input {
 
 .tree-item-children {
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .popover {
@@ -3668,8 +3669,8 @@ body {
 }
 
 .site-body-left-column {
-    width: 250px;
-    flex: 0 0 250px;
+    min-width: 250px;
+    flex: 0 0 20%;
     position: relative;
     height: 100%;
     display: none;
